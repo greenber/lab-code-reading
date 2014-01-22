@@ -13,6 +13,11 @@ public class Main
     main (String[] args) 
   {
     java.io.PrintWriter pen = new java.io.PrintWriter (System.out, true);
+    for (double i = 0; i < 1.0; i += .1) 
+    {
+      pen.println (i + " squared is " + MathUtils.square (i));
+    }
+    
     for (int i = 0; i < 5; i++) 
       {
         pen.println (i + " squared is " + MathUtils.square (i));
